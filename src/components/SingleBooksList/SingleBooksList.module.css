@@ -1,0 +1,36 @@
+.Book{
+    margin: 10px 30px;
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.Book h3{
+    text-align: center;
+}
+
+.Book img{
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.Button{
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: salmon;
+    transition: all .3s ease;
+}
+
+.Button:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.Book a{
+    color: black;
+    text-decoration: none;
+}

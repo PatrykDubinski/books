@@ -1,0 +1,97 @@
+body{
+    background-color: #eee;
+}
+
+.BookWrapper{
+    padding: 80px 20px 60px 20px;
+    background-color: #eee;
+}
+
+.SingleWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Left{
+    margin-top: 30px;
+    margin-right: 30px;
+    padding-right: 20px;
+    border-right: 1px dotted #413e3e;
+    height: 20%;
+}
+
+.Left img{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.Left p{
+    font-size: 0.75rem;
+}
+
+.Left p:hover{
+    cursor: pointer;
+}
+
+.Left p:hover i{
+    color: red;
+}
+
+.By{
+    font-size: 0.95rem;
+    color: #817e7e;
+    margin-top: -15px;
+}
+
+.GetCopy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.CopyWrapper{
+    margin-top: 80px;
+    border-bottom: 1px dashed #413e3e;
+}
+
+.Reviews{
+    margin-top: 50px;
+}
+
+.Review{
+    border-bottom: 1px dotted #413e3e;
+}
+
+.date{
+    font-size: 0.8rem;
+    color: #817e7e;
+}
+
+.author{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.GetCopy a{
+    color: #413e3e;
+    text-decoration: none;
+    background-color: #a38a8a;
+    margin-bottom: 20px;
+}
+
+.BuyBox{
+    font-size: 0.85rem;
+    border: 1px solid #817e7e;
+    padding: 0 5px;
+    transition: all .3s ease-in-out;
+}
+
+.BuyBox:hover{
+    cursor: pointer;
+    background-color: salmon;
+    color: white;
+}
+
+.BuyBox:first-child{
+    margin-left: 0;
+}

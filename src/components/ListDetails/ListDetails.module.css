@@ -1,0 +1,127 @@
+.Wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.BookWrapper{
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.BookWrapper img{
+    width: 100%;
+    height: 100%;
+    transition: background-color .4s ease-in-out;
+}
+
+.BookWrapper h3{
+    margin: 0 auto 15px auto;
+}
+
+.BookWrapper h4{
+    margin: 0;
+}
+
+.FlipCard{
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.FlipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .FlipCard:hover .FlipCardInner{
+    transform: rotateY(180deg);
+  }
+
+  .FlipCardFront, .FlipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .FlipCardFront:hover,
+  .FlipCardBack:hover{
+      cursor: pointer;
+  }
+
+  .FlipCardFront {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .FlipCardBack{
+      background-color: rgba(0, 0, 0, .8);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: rotateY(180deg);
+      font-size: 25px;
+      transition: color .3s ease-in;
+  }
+
+  .FlipCardBack i{
+    animation: pulse 1s infinite;
+    font-size: 10rem;
+  }
+
+  @keyframes pulse{
+    0%{
+        color: white;
+        transform: scale(1);
+    }
+    50%{
+        color: red;
+        transform: scale(1.3);
+    }
+    100%{
+        color: white;
+        transform: scale(1);
+    }
+}
+
+.Button{
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: salmon;
+    transition: all .3s ease-in-out;
+}
+
+.Button:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.BookWrapper a{
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+.BookWrapper a:hover .Button{
+    color: black;
+}

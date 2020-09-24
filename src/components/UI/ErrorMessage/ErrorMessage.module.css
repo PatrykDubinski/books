@@ -1,0 +1,18 @@
+p{
+    margin: 0;
+}
+
+.Message{
+    color: red;
+}
+
+.MessageWrapper{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.MessageWrapper i {
+    position: absolute;
+    left: 0;
+}

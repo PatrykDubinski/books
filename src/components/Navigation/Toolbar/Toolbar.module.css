@@ -1,0 +1,30 @@
+.toolbarWrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.Logo{
+    height: 80%;
+}
+
+.Logo:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 599px){
+    .DesktopOnly{
+        display: none;
+    }
+}
+
+.Toolbar nav{
+    height: 100%;
+}
